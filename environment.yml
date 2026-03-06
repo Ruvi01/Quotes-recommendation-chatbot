@@ -1,0 +1,10 @@
+﻿name: quotes-bot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - rasa==3.6.20
+      - flask==3.0.3
+      - requests==2.32.3

@@ -1,0 +1,42 @@
+﻿version: "3.1"
+
+stories:
+- story: test motivation path
+  steps:
+    - user: |
+        hi
+      intent: greet
+    - action: utter_greet
+    - user: |
+        motivate me
+      intent: motivation
+    - action: utter_motivation
+    - action: utter_ask_more
+
+- story: test funny then exit
+  steps:
+    - user: |
+        tell me something funny
+      intent: funny
+    - action: utter_funny
+    - action: utter_ask_more
+    - user: |
+        no thanks
+      intent: deny
+    - action: utter_goodbye
+
+- story: test confidence path
+  steps:
+    - user: |
+        boost my confidence
+      intent: confidence
+    - action: utter_confidence
+    - action: utter_ask_more
+
+- story: test hard work path
+  steps:
+    - user: |
+        give me a hard work quote
+      intent: hard_work
+    - action: utter_hard_work
+    - action: utter_ask_more

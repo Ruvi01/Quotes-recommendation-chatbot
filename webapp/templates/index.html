@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quotes Recommendation Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <p class="brand-kicker">AI Assistant</p>
+        <h1>Quotes Studio</h1>
+        <p>Choose a category to instantly generate a quote.</p>
+      </div>
+
+      <nav class="tabs" aria-label="Quote categories">
+        <button class="tab-btn active" data-prompt="Give me a motivation quote">Motivation</button>
+        <button class="tab-btn" data-prompt="Give me an inspiration quote">Inspiration</button>
+        <button class="tab-btn" data-prompt="Give me a success quote">Success</button>
+        <button class="tab-btn" data-prompt="Give me a money quote">Money</button>
+        <button class="tab-btn" data-prompt="Give me a love quote">Love</button>
+        <button class="tab-btn" data-prompt="Tell me something funny">Funny</button>
+        <button class="tab-btn" data-prompt="Give me a life quote">Life</button>
+        <button class="tab-btn" data-prompt="Give me a confidence quote">Confidence</button>
+        <button class="tab-btn" data-prompt="Give me a hard work quote">Hard Work</button>
+        <button class="tab-btn" data-prompt="Give me a happiness quote">Happiness</button>
+      </nav>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="panel-header">
+        <h2>Quotes Recommendation Chatbot</h2>
+        <p>Type a custom message or click any category on the left.</p>
+      </header>
+
+      <div id="chat-window" class="chat-window" aria-live="polite"></div>
+
+      <form id="chat-form" class="chat-form">
+        <input id="message" type="text" placeholder="Type your message..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+﻿version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - hey bot
+    - hello there
+    - hi chatbot
+
+- intent: motivation
+  examples: |
+    - I need motivation
+    - motivate me
+    - give me a motivational quote
+    - I feel low, motivate me
+    - can you boost my mood
+    - share something motivating
+    - I need encouragement
+    - I feel tired and demotivated
+    - say something to push me forward
+    - give me a positive line
+
+- intent: inspiration
+  examples: |
+    - inspire me
+    - give me an inspirational quote
+    - I need inspiration
+    - share an inspiring thought
+    - I want something inspiring
+    - can you inspire me today
+    - send me an uplifting quote
+    - I need a spark
+    - tell me something meaningful
+    - I want to feel inspired
+
+- intent: success
+  examples: |
+    - give me a success quote
+    - I want success motivation
+    - share a quote about achievement
+    - how to stay focused on goals
+    - tell me a quote for career growth
+    - I need success inspiration
+    - share a winning mindset quote
+    - I want a quote for my goals
+    - say something about discipline
+    - give me achievement motivation
+
+- intent: money
+  examples: |
+    - give me a money quote
+    - share a quote about wealth
+    - I need finance motivation
+    - tell me something about saving money
+    - I want a quote about investment
+    - money mindset quote please
+    - how to think rich
+    - share a quote on financial success
+    - give me a quote about budgeting
+    - I need money inspiration
+
+- intent: love
+  examples: |
+    - give me a love quote
+    - share something about love
+    - I want romantic quotes
+    - tell me a sweet quote
+    - can I get a love line
+    - I miss someone, share a quote
+    - say something heartfelt
+    - I need a relationship quote
+    - tell me about affection
+    - share a loving message
+
+- intent: funny
+  examples: |
+    - tell me something funny
+    - make me laugh
+    - give me a humorous quote
+    - I need a joke
+    - can you cheer me up with humor
+    - share a funny line
+    - say a silly quote
+    - I am stressed, make it funny
+    - make me smile
+    - I need comic relief
+
+- intent: life
+  examples: |
+    - give me a life quote
+    - share something about life
+    - I need life advice quote
+    - tell me a quote on living well
+    - I want a meaningful life line
+    - share a real life quote
+    - say something about life journey
+    - life motivation please
+    - I need perspective on life
+    - quote about daily life
+
+- intent: confidence
+  examples: |
+    - give me a confidence quote
+    - I need self confidence motivation
+    - help me feel confident
+    - share a quote for confidence
+    - I want to believe in myself
+    - tell me a quote about self belief
+    - boost my confidence
+    - I feel insecure, motivate me
+    - confidence line please
+    - quote on courage and confidence
+
+- intent: hard_work
+  examples: |
+    - give me a hard work quote
+    - I need hard work motivation
+    - share a quote on effort
+    - tell me a quote about dedication
+    - I want to work harder
+    - quote for discipline and hard work
+    - push me to hustle
+    - I need consistency motivation
+    - motivate me to grind
+    - hard work success quote
+
+- intent: happiness
+  examples: |
+    - give me a happiness quote
+    - I want to feel happy
+    - share something joyful
+    - tell me a quote on happiness
+    - I need positive happy thoughts
+    - cheer me up with a happiness quote
+    - quote about joy please
+    - make me feel better
+    - I need a happy mindset quote
+    - share a smile quote
+
+- intent: request_another
+  examples: |
+    - another one
+    - give me one more
+    - next quote please
+    - can I have another quote
+    - one more quote
+    - keep going
+    - more please
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - sure
+    - of course
+    - okay
+    - please
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not now
+    - that's enough
+    - no thanks
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - that helps
+    - grateful
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - take care

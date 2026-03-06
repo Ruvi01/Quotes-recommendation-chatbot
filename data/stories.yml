@@ -1,0 +1,89 @@
+﻿version: "3.1"
+
+stories:
+- story: greet then motivation flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: motivation
+    - action: utter_motivation
+    - action: utter_ask_more
+
+- story: inspiration flow
+  steps:
+    - intent: inspiration
+    - action: utter_inspiration
+    - action: utter_ask_more
+
+- story: success flow
+  steps:
+    - intent: success
+    - action: utter_success
+    - action: utter_ask_more
+
+- story: money flow
+  steps:
+    - intent: money
+    - action: utter_money
+    - action: utter_ask_more
+
+- story: love flow
+  steps:
+    - intent: love
+    - action: utter_love
+    - action: utter_ask_more
+
+- story: funny flow
+  steps:
+    - intent: funny
+    - action: utter_funny
+    - action: utter_ask_more
+
+- story: life flow
+  steps:
+    - intent: life
+    - action: utter_life
+    - action: utter_ask_more
+
+- story: confidence flow
+  steps:
+    - intent: confidence
+    - action: utter_confidence
+    - action: utter_ask_more
+
+- story: hard work flow
+  steps:
+    - intent: hard_work
+    - action: utter_hard_work
+    - action: utter_ask_more
+
+- story: happiness flow
+  steps:
+    - intent: happiness
+    - action: utter_happiness
+    - action: utter_ask_more
+
+- story: ask another quote after response
+  steps:
+    - intent: request_another
+    - action: utter_ask_more
+
+- story: thanks flow
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: goodbye flow
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: user affirms more content
+  steps:
+    - intent: affirm
+    - action: utter_ask_more
+
+- story: user denies more content
+  steps:
+    - intent: deny
+    - action: utter_goodbye

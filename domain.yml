@@ -1,0 +1,91 @@
+﻿version: "3.1"
+
+intents:
+  - greet
+  - motivation
+  - inspiration
+  - success
+  - money
+  - love
+  - funny
+  - life
+  - confidence
+  - hard_work
+  - happiness
+  - request_another
+  - affirm
+  - deny
+  - thanks
+  - goodbye
+  - nlu_fallback
+
+responses:
+  utter_greet:
+    - text: "Hi, I am your Quotes Recommendation Bot. Tell me how you feel, and I will suggest a quote."
+    - text: "Hello. I can share motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness quotes."
+
+  utter_motivation:
+    - text: "\"It always seems impossible until it's done.\" - Nelson Mandela"
+    - text: "\"Small steps every day still move you forward.\""
+    - text: "\"Your future is created by what you do today, not tomorrow.\""
+
+  utter_inspiration:
+    - text: "\"Believe you can and you're halfway there.\" - Theodore Roosevelt"
+    - text: "\"Start where you are. Use what you have. Do what you can.\" - Arthur Ashe"
+    - text: "\"Turn your wounds into wisdom.\" - Oprah Winfrey"
+
+  utter_success:
+    - text: "\"Success is the sum of small efforts repeated day in and day out.\" - Robert Collier"
+    - text: "\"Don't watch the clock; do what it does. Keep going.\" - Sam Levenson"
+    - text: "\"Success usually comes to those who are too busy to be looking for it.\" - Henry David Thoreau"
+
+  utter_money:
+    - text: "\"Do not save what is left after spending, but spend what is left after saving.\" - Warren Buffett"
+    - text: "\"A budget is telling your money where to go instead of wondering where it went.\" - Dave Ramsey"
+    - text: "\"Never depend on a single income. Make investment to create a second source.\" - Warren Buffett"
+
+  utter_love:
+    - text: "\"Love recognizes no barriers.\" - Maya Angelou"
+    - text: "\"Where there is love there is life.\" - Mahatma Gandhi"
+    - text: "\"The best thing to hold onto in life is each other.\" - Audrey Hepburn"
+
+  utter_funny:
+    - text: "\"I am on a seafood diet. I see food and I eat it.\""
+    - text: "\"Why don't scientists trust atoms? Because they make up everything.\""
+    - text: "\"My wallet is like an onion, opening it makes me cry.\""
+
+  utter_life:
+    - text: "\"Life is what happens when you're busy making other plans.\" - John Lennon"
+    - text: "\"In the middle of difficulty lies opportunity.\" - Albert Einstein"
+    - text: "\"The purpose of our lives is to be happy.\" - Dalai Lama"
+
+  utter_confidence:
+    - text: "\"With confidence, you have won before you have started.\" - Marcus Garvey"
+    - text: "\"Believe in yourself and you will be unstoppable.\""
+    - text: "\"Confidence comes not from always being right but from not fearing to be wrong.\" - Peter T. Mcintyre"
+
+  utter_hard_work:
+    - text: "\"There are no secrets to success. It is the result of preparation, hard work, and learning from failure.\" - Colin Powell"
+    - text: "\"Dreams do not work unless you do.\" - John C. Maxwell"
+    - text: "\"The only place where success comes before work is in the dictionary.\" - Vidal Sassoon"
+
+  utter_happiness:
+    - text: "\"Happiness depends upon ourselves.\" - Aristotle"
+    - text: "\"Happiness is not by chance, but by choice.\" - Jim Rohn"
+    - text: "\"For every minute you are angry you lose sixty seconds of happiness.\" - Ralph Waldo Emerson"
+
+  utter_ask_more:
+    - text: "Would you like another category? You can say motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness."
+
+  utter_thanks:
+    - text: "You are welcome. I am here anytime you need a boost."
+
+  utter_goodbye:
+    - text: "Goodbye. Stay positive and keep going."
+
+  utter_default:
+    - text: "I did not fully understand that. Try asking for motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness quotes."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

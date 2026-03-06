@@ -1,0 +1,22 @@
+﻿version: "3.1"
+
+rules:
+- rule: respond to greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: fallback response
+  steps:
+    - intent: nlu_fallback
+    - action: utter_default
+
+- rule: respond goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: respond thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
