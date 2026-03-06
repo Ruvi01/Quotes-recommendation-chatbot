@@ -5,6 +5,7 @@ rules:
   steps:
     - intent: greet
     - action: utter_greet
+    - action: utter_ask_category
 
 - rule: fallback response
   steps:

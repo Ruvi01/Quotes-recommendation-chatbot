@@ -21,8 +21,12 @@ intents:
 
 responses:
   utter_greet:
-    - text: "Hi, I am your Quotes Recommendation Bot. Tell me how you feel, and I will suggest a quote."
-    - text: "Hello. I can share motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness quotes."
+    - text: "Hey, welcome to Quotes Studio."
+    - text: "Hello, I am your quotes bot."
+    - text: "Hi there, I am ready with some good quotes."
+
+  utter_ask_category:
+    - text: "What type of quote do you want? You can choose motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness."
 
   utter_motivation:
     - text: "\"It always seems impossible until it's done.\" - Nelson Mandela"
@@ -74,17 +78,27 @@ responses:
     - text: "\"Happiness is not by chance, but by choice.\" - Jim Rohn"
     - text: "\"For every minute you are angry you lose sixty seconds of happiness.\" - Ralph Waldo Emerson"
 
-  utter_ask_more:
-    - text: "Would you like another category? You can say motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness."
+  utter_ask_helpful:
+    - text: "Was this helpful?"
+
+  utter_offer_another:
+    - text: "No problem. Do you want another quote from the same category?"
+
+  utter_happy_to_help:
+    - text: "Great, I am glad it helped."
+    - text: "Nice, happy that quote worked for you."
+    - text: "Good to hear. I am here if you want more."
 
   utter_thanks:
-    - text: "You are welcome. I am here anytime you need a boost."
+    - text: "You are welcome. Ask me anytime for another quote."
 
   utter_goodbye:
-    - text: "Goodbye. Stay positive and keep going."
+    - text: "Goodbye. \"Keep your face always toward the sunshine, and shadows will fall behind you.\" - Walt Whitman"
+    - text: "Bye. \"The best way to predict your future is to create it.\" - Abraham Lincoln"
+    - text: "Take care. \"Every day may not be good, but there is something good in every day.\""
 
   utter_default:
-    - text: "I did not fully understand that. Try asking for motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness quotes."
+    - text: "I did not fully understand that. Try choosing a quote category like motivation, inspiration, success, money, love, funny, life, confidence, hard work, or happiness."
 
 session_config:
   session_expiration_time: 60

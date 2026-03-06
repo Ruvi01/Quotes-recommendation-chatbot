@@ -1,72 +1,291 @@
 ﻿version: "3.1"
 
 stories:
-- story: greet then motivation flow
+- story: greet and ask category
   steps:
     - intent: greet
     - action: utter_greet
+    - action: utter_ask_category
+
+- story: motivation complete flow
+  steps:
     - intent: motivation
     - action: utter_motivation
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: inspiration flow
+- story: motivation another after deny
+  steps:
+    - intent: motivation
+    - action: utter_motivation
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_motivation
+    - action: utter_ask_helpful
+
+- story: motivation another direct
+  steps:
+    - intent: motivation
+    - action: utter_motivation
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_motivation
+    - action: utter_ask_helpful
+
+- story: inspiration complete flow
   steps:
     - intent: inspiration
     - action: utter_inspiration
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: success flow
+- story: inspiration another after deny
+  steps:
+    - intent: inspiration
+    - action: utter_inspiration
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_inspiration
+    - action: utter_ask_helpful
+
+- story: inspiration another direct
+  steps:
+    - intent: inspiration
+    - action: utter_inspiration
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_inspiration
+    - action: utter_ask_helpful
+
+- story: success complete flow
   steps:
     - intent: success
     - action: utter_success
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: money flow
+- story: success another after deny
+  steps:
+    - intent: success
+    - action: utter_success
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_success
+    - action: utter_ask_helpful
+
+- story: success another direct
+  steps:
+    - intent: success
+    - action: utter_success
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_success
+    - action: utter_ask_helpful
+
+- story: money complete flow
   steps:
     - intent: money
     - action: utter_money
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: love flow
+- story: money another after deny
+  steps:
+    - intent: money
+    - action: utter_money
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_money
+    - action: utter_ask_helpful
+
+- story: money another direct
+  steps:
+    - intent: money
+    - action: utter_money
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_money
+    - action: utter_ask_helpful
+
+- story: love complete flow
   steps:
     - intent: love
     - action: utter_love
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: funny flow
+- story: love another after deny
+  steps:
+    - intent: love
+    - action: utter_love
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_love
+    - action: utter_ask_helpful
+
+- story: love another direct
+  steps:
+    - intent: love
+    - action: utter_love
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_love
+    - action: utter_ask_helpful
+
+- story: funny complete flow
   steps:
     - intent: funny
     - action: utter_funny
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: life flow
+- story: funny another after deny
+  steps:
+    - intent: funny
+    - action: utter_funny
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_funny
+    - action: utter_ask_helpful
+
+- story: funny another direct
+  steps:
+    - intent: funny
+    - action: utter_funny
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_funny
+    - action: utter_ask_helpful
+
+- story: life complete flow
   steps:
     - intent: life
     - action: utter_life
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: confidence flow
+- story: life another after deny
+  steps:
+    - intent: life
+    - action: utter_life
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_life
+    - action: utter_ask_helpful
+
+- story: life another direct
+  steps:
+    - intent: life
+    - action: utter_life
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_life
+    - action: utter_ask_helpful
+
+- story: confidence complete flow
   steps:
     - intent: confidence
     - action: utter_confidence
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: hard work flow
+- story: confidence another after deny
+  steps:
+    - intent: confidence
+    - action: utter_confidence
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_confidence
+    - action: utter_ask_helpful
+
+- story: confidence another direct
+  steps:
+    - intent: confidence
+    - action: utter_confidence
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_confidence
+    - action: utter_ask_helpful
+
+- story: hard work complete flow
   steps:
     - intent: hard_work
     - action: utter_hard_work
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: happiness flow
+- story: hard work another after deny
+  steps:
+    - intent: hard_work
+    - action: utter_hard_work
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_hard_work
+    - action: utter_ask_helpful
+
+- story: hard work another direct
+  steps:
+    - intent: hard_work
+    - action: utter_hard_work
+    - action: utter_ask_helpful
+    - intent: request_another
+    - action: utter_hard_work
+    - action: utter_ask_helpful
+
+- story: happiness complete flow
   steps:
     - intent: happiness
     - action: utter_happiness
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - intent: affirm
+    - action: utter_happy_to_help
 
-- story: ask another quote after response
+- story: happiness another after deny
   steps:
+    - intent: happiness
+    - action: utter_happiness
+    - action: utter_ask_helpful
+    - intent: deny
+    - action: utter_offer_another
+    - intent: affirm
+    - action: utter_happiness
+    - action: utter_ask_helpful
+
+- story: happiness another direct
+  steps:
+    - intent: happiness
+    - action: utter_happiness
+    - action: utter_ask_helpful
     - intent: request_another
-    - action: utter_ask_more
+    - action: utter_happiness
+    - action: utter_ask_helpful
 
 - story: thanks flow
   steps:
@@ -76,14 +295,4 @@ stories:
 - story: goodbye flow
   steps:
     - intent: goodbye
-    - action: utter_goodbye
-
-- story: user affirms more content
-  steps:
-    - intent: affirm
-    - action: utter_ask_more
-
-- story: user denies more content
-  steps:
-    - intent: deny
     - action: utter_goodbye

@@ -1,42 +1,56 @@
 ﻿version: "3.1"
 
 stories:
-- story: test motivation path
+- story: test motivation helpful path
   steps:
     - user: |
         hi
       intent: greet
     - action: utter_greet
+    - action: utter_ask_category
     - user: |
-        motivate me
+        give me a motivational quote
       intent: motivation
     - action: utter_motivation
-    - action: utter_ask_more
+    - action: utter_ask_helpful
+    - user: |
+        yes it helped
+      intent: affirm
+    - action: utter_happy_to_help
 
-- story: test funny then exit
+- story: test another quote path
   steps:
     - user: |
-        tell me something funny
+        give me a life quote
+      intent: life
+    - action: utter_life
+    - action: utter_ask_helpful
+    - user: |
+        no it did not help
+      intent: deny
+    - action: utter_offer_another
+    - user: |
+        yes
+      intent: affirm
+    - action: utter_life
+    - action: utter_ask_helpful
+
+- story: test direct another quote path
+  steps:
+    - user: |
+        give me a funny quote
       intent: funny
     - action: utter_funny
-    - action: utter_ask_more
+    - action: utter_ask_helpful
     - user: |
-        no thanks
-      intent: deny
+        another one
+      intent: request_another
+    - action: utter_funny
+    - action: utter_ask_helpful
+
+- story: test goodbye path
+  steps:
+    - user: |
+        bye
+      intent: goodbye
     - action: utter_goodbye
-
-- story: test confidence path
-  steps:
-    - user: |
-        boost my confidence
-      intent: confidence
-    - action: utter_confidence
-    - action: utter_ask_more
-
-- story: test hard work path
-  steps:
-    - user: |
-        give me a hard work quote
-      intent: hard_work
-    - action: utter_hard_work
-    - action: utter_ask_more

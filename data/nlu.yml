@@ -151,6 +151,9 @@ nlu:
     - one more quote
     - keep going
     - more please
+    - give me another quote
+    - show me one more
+    - I want a different quote
 
 - intent: affirm
   examples: |
@@ -160,6 +163,10 @@ nlu:
     - of course
     - okay
     - please
+    - it was helpful
+    - yes it helped
+    - that was good
+    - I like it
 
 - intent: deny
   examples: |
@@ -168,6 +175,11 @@ nlu:
     - not now
     - that's enough
     - no thanks
+    - it was not helpful
+    - no it did not help
+    - I did not like it
+    - not really
+    - give me something else
 
 - intent: thanks
   examples: |
