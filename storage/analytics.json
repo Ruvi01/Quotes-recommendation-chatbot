@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "web_user",
+        "language": "en",
+        "category": "inspiration",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:33:17.734250"
+    },
+    {
+      "event": "feedback",
+      "payload": {
+        "sender": "web_user",
+        "category": "inspiration",
+        "helpful": false,
+        "language": "en"
+      },
+      "ts": "2026-03-08T10:33:26.193636"
+    },
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "web_user",
+        "language": "en",
+        "category": "love",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:33:29.173601"
+    },
+    {
+      "event": "feedback",
+      "payload": {
+        "sender": "web_user",
+        "category": "love",
+        "helpful": true,
+        "language": "en"
+      },
+      "ts": "2026-03-08T10:33:50.630437"
+    },
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "web_user",
+        "language": "hi",
+        "category": "love",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:33:56.519050"
+    },
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "Ruvi",
+        "language": "en",
+        "category": "motivation",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:49:32.353551"
+    },
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "Ruvi",
+        "language": "en",
+        "category": "inspiration",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:49:34.720181"
+    },
+    {
+      "event": "chat",
+      "payload": {
+        "sender": "Ruvi",
+        "language": "en",
+        "category": "money",
+        "emotion": null
+      },
+      "ts": "2026-03-08T10:49:36.508387"
+    }
+  ],
+  "counters": {
+    "messages": 6,
+    "feedback": 2
+  }
+}

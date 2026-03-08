@@ -1,0 +1,18 @@
+{
+  "web_user": {
+    "last_category": null,
+    "awaiting": "helpful",
+    "liked_categories": {
+      "love": 1
+    },
+    "shown_indexes": {},
+    "language": "hi"
+  },
+  "Ruvi": {
+    "last_category": null,
+    "awaiting": "helpful",
+    "liked_categories": {},
+    "shown_indexes": {},
+    "language": "en"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "sender": "web_user",
+    "category": "inspiration",
+    "helpful": false,
+    "text": "I do not have a quote for that category yet.\n\nWas this helpful?",
+    "ts": "2026-03-08T10:33:26.153128"
+  },
+  {
+    "sender": "web_user",
+    "category": "love",
+    "helpful": true,
+    "text": "I do not have a quote for that category yet.\n\nWas this helpful?",
+    "ts": "2026-03-08T10:33:50.614344"
+  }
+]
