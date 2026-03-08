@@ -1,8 +1,9 @@
-﻿const chatWindow = document.getElementById("chat-window");
+const chatWindow = document.getElementById("chat-window");
 const chatForm = document.getElementById("chat-form");
 const messageInput = document.getElementById("message");
 const tabButtons = document.querySelectorAll(".tab-btn");
 const sendButton = chatForm.querySelector("button[type='submit']");
+const welcomeScreen = document.getElementById("welcome-screen");
 
 function addMessage(text, type) {
   const div = document.createElement("div");
@@ -122,6 +123,12 @@ function setActiveTab(clicked) {
 }
 
 addMessage("Hi there. I hope your day is going gently so far. Pick a category on the left or type what you need, and I will find a quote for you.", "bot");
+
+window.addEventListener("load", () => {
+  window.setTimeout(() => {
+    welcomeScreen?.classList.add("is-hidden");
+  }, 2000);
+});
 
 chatForm.addEventListener("submit", async (event) => {
   event.preventDefault();
